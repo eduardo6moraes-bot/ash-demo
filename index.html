@@ -1,51 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ASH Demo – Hackathon</title>
+  <title>ASH — Inteligência Visual Cinematográfica Orientada por IA</title>
 
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #0e0e0e;
-      color: #ffffff;
-      text-align: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #0b0b0d;
+      color: #f2f2f2;
+      line-height: 1.6;
     }
 
     header {
-      padding: 40px 20px 20px;
+      padding: 48px 24px 24px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      font-weight: 600;
     }
 
-    p {
-      max-width: 800px;
-      margin: 0 auto 20px;
-      line-height: 1.5;
-      color: #cccccc;
+    header p {
+      font-size: 1.1rem;
+      color: #cfcfd6;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .video-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 560px;
+      border: none;
+      border-radius: 12px;
+      background: #000;
     }
 
     section {
-      padding: 20px;
+      max-width: 900px;
+      margin: 64px auto;
+      padding: 0 24px;
     }
 
-    video {
-      width: 90%;
-      max-width: 900px;
-      border-radius: 12px;
-      box-shadow: 0 0 40px rgba(0,0,0,0.6);
-      margin-bottom: 40px;
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    section p {
+      color: #d0d0d8;
     }
 
     footer {
-      padding: 20px;
+      margin: 80px 0 40px;
+      text-align: center;
       font-size: 0.85rem;
-      color: #777;
+      color: #8a8a96;
     }
   </style>
 </head>
@@ -53,29 +75,43 @@
 <body>
 
   <header>
-    <h1>ASH Demo</h1>
+    <h1>ASH</h1>
     <p>
-      Demonstration project created for a hackathon, showcasing a short narrative
-      built with AI-generated video scenes.
+      Inteligência Visual Cinematográfica orientada por IA, projetada para
+      orquestrar vídeos e imagens gerados por modelos generativos em narrativas
+      visuais modulares, escaláveis e de alta qualidade.
     </p>
   </header>
 
-  <section>
-    <!-- VIDEO PRINCIPAL -->
-    <video controls preload="metadata">
-      <source src="assets/videos/scene_01.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <div class="video-container">
+    <iframe
+      src="https://drive.google.com/file/d/1aZA68mIVSHPQXgPDaj9ta9EwlBmDs7_I/preview"
+      allow="autoplay">
+    </iframe>
+  </div>
 
+  <section>
+    <h2>Sobre o Projeto</h2>
     <p>
-      This video is part of a modular sequence of AI-generated scenes,
-      designed to demonstrate creative flow, control, and narrative clarity
-      under technical constraints.
+      ASH demonstra como sistemas baseados em Gemini podem ser utilizados não
+      apenas como geradores isolados de mídia, mas como motores de orquestração
+      criativa. O projeto explora uma abordagem modular, em que limitações técnicas
+      (como duração curta de clipes) são transformadas em arquitetura narrativa.
+    </p>
+  </section>
+
+  <section>
+    <h2>Uso do Gemini</h2>
+    <p>
+      Os vídeos apresentados foram gerados a partir de prompts cinematográficos
+      cuidadosamente estruturados, explorando controle de ritmo, consistência
+      estética e fluidez visual. Cada segmento atua como um bloco narrativo,
+      permitindo composição, edição e escalabilidade do conteúdo final.
     </p>
   </section>
 
   <footer>
-    ASH Demo • Hackathon Project
+    Projeto desenvolvido para o Gemini Hackathon 3
   </footer>
 
 </body>

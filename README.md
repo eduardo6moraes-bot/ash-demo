@@ -1,116 +1,99 @@
-# ASH — AI-Driven Cinematic Visual Intelligence
+# ASH — Cinematic Visual Intelligence (AI-Orchestrated)
 
-ASH is an AI-driven cinematic visual intelligence demo that orchestrates AI-generated video and imagery into immersive, high-end visual experiences with a futuristic corporate aesthetic.
+ASH is a cinematic visual intelligence demo built for the **Gemini 3 Hackathon**.  
+It showcases how generative AI can be used not just to create isolated media, but to **orchestrate modular visual blocks** into a cohesive narrative with consistent style, pacing, and clarity.
 
-## Problem & Solution
+---
 
-**The Problem:** Traditional cinematic production is expensive, time-consuming, and inaccessible. High-quality cinematography requires specialized crews, expensive equipment, and weeks of production. Small teams and startups are locked out of professional visual storytelling.
+## 🎥 Demo Video (Public)
+Watch the full demo here:  
+https://drive.google.com/file/d/1aZA68mIVSHPQXgPDaj9ta9EwlBmDs7_I/view
 
-**The Solution:** ASH demonstrates how generative AI can replace traditional cinematic production pipelines. Using AI-generated video and image synthesis, we create broadcast-quality cinematics in hours instead of weeks, at a fraction of the cost.
+**Embedded demo page (HTML):**  
+This repository includes an `index.html` page that embeds the demo video for easy judging.
 
-**Why It Matters Now:** The convergence of AI image/video generation, affordable compute, and sophisticated prompting techniques makes this feasible today. Teams can now access cinematic-grade visuals without a studio.
+---
 
-## Why It Matters
+## ✅ What This Project Demonstrates
+- **Modular narrative architecture**: the story is constructed from short, high-quality cinematic segments (visual “beats”).
+- **Consistent aesthetic control**: prompts are engineered to maintain lighting, tone, and visual coherence across segments.
+- **Orchestration mindset**: limitations (e.g., short clip duration) are treated as design constraints that become an advantage via composition.
+- **Judge-friendly delivery**: one-click demo, clean structure, no missing dependencies.
 
-ASH directly impacts three audiences:
+---
 
-- **Agencies & Studios** — Reduce production timelines and costs while expanding creative capacity
-- - **Marketing Teams** — Produce on-demand cinematic assets for campaigns, launches, and events without waiting for production houses
-  - - **Startups** — Access broadcast-quality visuals typically reserved for enterprises with big budgets
-   
-    - ## Live Demo
-   
-    - [View ASH Demo](https://eduardo6moraes-bot.github.io/ash-demo/)
-   
-    - ## Concept
-   
-    - Four 10-second cinematic clips form a 40-second visual arc:
-   
-    - | # | Clip | Camera Motion | Narrative |
-    - |---|------|---------------|-----------|
-    - | 1 | IGNITION | Dolly forward | Entry — anticipation, precision |
-    - | 2 | STRUCTURE | Slow orbit | Observation — contemplation |
-    - | 3 | EXPANSION | Push-in | Scale — quiet power |
-    - | 4 | SILENCE | Dolly backward | Closure — serenity |
-   
-    - Arc: (a breathing cycle)
-    - **enter → observe → expand → retreat**
-   
-    - ## Visual Identity
-   
-    - - **Palette:** Deep blacks, metallic grays, cold blue, amber accents
-      - - **Surfaces:** Polished floors, dark glass, brushed metal, volumetric light
-        - - **Camera:** Slow, controlled — dolly, orbit, push-in
-          - - **Lighting:** Low-key, backlit, volumetric
-            - - **Constraints:** No people, no text, no logos, no UI
-             
-              - ## Tech Stack
-             
-              - | Component | Tool |
-              - |-----------|------|
-              - | Video Generation | Runway Gen-3 |
-              - | Image Generation | Craiyon / Midjourney |
-              - | Frontend | HTML, CSS, JavaScript |
-              - | Hosting | GitHub Pages |
-              - | Video Assembly | FFmpeg |
-             
-              - ## Project Structure
-             
-              - ```
-                ash-demo/
-                ├── index.html
-                ├── assets/
-                │ ├── video/
-                │ │ └── ash-final.mp4
-                │ ├── clips/
-                │ │ ├── 01-ignition.mp4
-                │ │ ├── 02-structure.mp4
-                │ │ ├── 03-expansion.mp4
-                │ │ └── 04-silence.mp4
-                │ └── images/
-                │   └── cover.png
-                ├── pitch/
-                │ ├── ash-pitch.mp4
-                │ └── ash-deck.pdf
-                └── README.md
-                ```
+## 🧠 How It Works (High-Level)
+ASH uses a **visual orchestration approach**:
 
-                ## Video Assembly
+1. **Define narrative beats** (opening → tension → transition → reveal → flow → scale → closing).
+2. **Generate short cinematic segments** (each segment is an intentional narrative unit).
+3. **Compose** the segments into a single coherent demo.
+4. Provide a **clean presentation layer** (HTML + README) for fast evaluation.
 
-                ```bash
-                echo "file 'assets/clips/01-ignition.mp4'" > filelist.txt
-                echo "file 'assets/clips/02-structure.mp4'" >> filelist.txt
-                echo "file 'assets/clips/03-expansion.mp4'" >> filelist.txt
-                echo "file 'assets/clips/04-silence.mp4'" >> filelist.txt
+The key idea is: **small clips become building blocks** for a larger cinematic story.
 
-                ffmpeg -f concat -safe 0 -i filelist.txt -c copy assets/video/ash-final.mp4
-                ```
+---
 
-                ## Use Cases
+## 🤖 Gemini / AI Contribution
+All visual assets were generated using AI with **cinematic prompt engineering** focused on:
+- controlled camera motion and pacing
+- clean futuristic minimalism
+- high contrast + soft volumetric lighting
+- consistent tone across outputs
+- human-centered impact (not just abstract visuals)
 
-                - Corporate brand videos and visual identities
-                - - Immersive event presentations
-                  - - Product launch cinematics
-                    - - AI-powered creative pipeline demonstrations
-                      - - Visual prototyping for agencies and studios
-                       
-                        - ## Hackathon
-                       
-                        - Built for [lablab.ai Hackathon 2026](https://lablab.ai)
-                       
-                        - ## License
-                       
-                        - MIT
-                       
-                        - ## Pending Assets
-                       
-                        - The following assets are currently placeholders and need to be replaced with final files:
-                       
-                        - - `assets/video/ash-final.mp4` — Final 40s cinematic video (1920x1080, H.264)
-                          - - `assets/images/cover.png` — Project cover image (16:9, 1920x1080)
-                            - - `assets/images/01-threshold.png` — Clip 01 thumbnail
-                              - - `assets/images/02-construct.png` — Clip 02 thumbnail
-                                - - `assets/images/03-grid.png` — Clip 03 thumbnail
-                                  - - `assets/images/04-fade.png` — Clip 04 thumbnail
-                                    - - `pitch/ash-pitch.mp4` — Pitch video (3-5 min)
-                                      - - `pitch/ash-deck.pdf` — Slide deck PDF
+---
+
+## 🖼️ Images (Assets)
+This repository includes three final project images (named for clarity):
+
+- `capa.png` — **Cover / Hero Image**  
+  Title: **ASH — Cinematic Visual Intelligence**  
+  Short: A cinematic visual identity representing ASH as an AI-driven system for creative orchestration.
+
+- `01-limiar.png` — **Threshold / Transition**  
+  Title: **Creative Threshold**  
+  Short: A symbolic representation of the transition point where AI begins to organize and elevate the creative process.
+
+- `concept.png` — **Human Impact**  
+  Title: **Human Impact of AI Orchestration**  
+  Short: A visualization of the human-centered outcome of AI-driven orchestration: clarity, confidence, and creative empowerment.
+
+---
+
+## 📄 Repository Contents
+- `index.html` — Demo page with embedded public video (Google Drive preview embed).
+- `README.md` — Project explanation and demo link.
+- `capa.png`, `01-limiar.png`, `concept.png` — Final visual assets.
+
+---
+
+## 🧪 Running / Viewing
+### Option A — Quick view (recommended)
+Open `index.html` via GitHub Pages or view it locally in a browser.  
+The embedded player uses the Google Drive **/preview** embed link.
+
+### Option B — Local
+Download the repo and open `index.html` in your browser.
+
+---
+
+## 🧩 Why This Is Different
+Many projects generate media. ASH focuses on **orchestration**:
+- turning constraints into a modular narrative system
+- treating each clip as a reusable “unit” inside a larger cinematic pipeline
+- optimizing for clarity, coherence, and judge experience
+
+---
+
+## ✅ Submission Checklist (for Judges)
+- [x] Public demo video link available
+- [x] Embedded demo page included (`index.html`)
+- [x] Final images included and named clearly
+- [x] Project description + AI contribution explained
+- [x] No missing assets required to understand the demo
+
+---
+
+## Credits
+Built for the **Gemini 3 Hackathon**.

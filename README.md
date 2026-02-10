@@ -9,8 +9,7 @@ ASH is an experimental AI-oriented cinematic system that explores how short gene
 🌐 Project page  
 https://eduardo6moraes-bot.github.io/ash-demo/
 
-🎥 Video demo  
-https://youtu.be/SEU_VIDEO_AQUI
+🎥 https://m.youtube.com/watch?v=c8VWL3UdyPY
 
 ---
 

@@ -1,77 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ASH — Inteligência Visual Cinematográfica Orientada por IA</title>
 
   <style>
     body {
       margin: 0;
-      background: #0b0b0d;
-      color: #f0f0f5;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #0b0b0b;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     header {
+      padding: 40px 20px;
       text-align: center;
-      padding: 48px 24px 12px;
-      max-width: 980px;
-      margin: 0 auto;
+      background: radial-gradient(circle at top, #1a1a1a, #000);
     }
 
     header h1 {
-      font-size: 2.3rem;
-      margin-bottom: 8px;
-      font-weight: 600;
+      margin: 0;
+      font-size: 2.2em;
+      letter-spacing: 2px;
     }
 
     header p {
-      font-size: 1.05rem;
-      color: #d2d2d8;
-      margin: 0 auto;
-      max-width: 800px;
-    }
-
-    .video-container {
-      margin: 48px auto;
-      max-width: 1000px;
-      padding: 0 16px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 560px;
-      border: none;
-      border-radius: 10px;
-      background: #000;
+      max-width: 720px;
+      margin: 20px auto 0;
+      opacity: 0.85;
     }
 
     section {
-      margin: 48px auto;
-      padding: 0 24px;
-      max-width: 900px;
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 12px;
-      font-weight: 500;
-      color: #ffffff;
+    h2 {
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 1.4em;
     }
 
-    section p {
-      font-size: 1rem;
-      color: #ccd0da;
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     footer {
       text-align: center;
-      margin: 80px 0 32px;
-      font-size: 0.85rem;
-      color: #7a7a82;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      opacity: 0.6;
     }
   </style>
 </head>
@@ -81,46 +76,40 @@
   <header>
     <h1>ASH</h1>
     <p>
-      Inteligência Visual Cinematográfica orientada por IA — uma
-      demonstração de orquestração visual de vídeos e imagens gerados
-      por modelos generativos num formato modular, escalável e narrativo,
-      projetado para o Hackathon Gemini 3.
+      ASH é um sistema de orquestração visual cinematográfica orientado por IA,
+      projetado para transformar clipes curtos gerados por modelos generativos
+      em narrativas visuais coerentes e escaláveis.
     </p>
   </header>
 
-  <div class="video-container">
-    <iframe
-      src="https://drive.google.com/file/d/1aZA68mIVSHPQXgPDaj9ta9EwlBmDs7_I/preview"
-      allow="autoplay"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <section>
+    <h2>Demonstração em Vídeo</h2>
+
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/c8VWL3UdyPY"
+        title="ASH — AI-Orchestrated Cinematic Visual System"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
   <section>
     <h2>Sobre o Projeto</h2>
     <p>
-      ASH demonstra como limites técnicos — como duração curta de clipes —
-      podem ser transformados em blocos narrativos intencionais.
-      Cada segmento é gerado com prompts cinematográficos e estruturados
-      para criar uma experiência visual coesa e estética.
-    </p>
-  </section>
-
-  <section>
-    <h2>Principais Características</h2>
-    <p>
-      ✔️ Arquitetura modular de vídeos<br>
-      ✔️ Narrativa visual orientada por IA<br>
-      ✔️ Consistência estética e ritmo<br>
-      ✔️ Escalável para composições maiores<br>
-      ✔️ Uso efetivo de modelos generativos para storytelling
+      O projeto explora uma abordagem modular para storytelling visual, onde
+      limitações de duração de vídeo são tratadas como blocos narrativos
+      independentes. Cada fragmento é concebido como parte de uma composição
+      maior, permitindo organização, ritmo e coerência estética orientados
+      por inteligência artificial.
     </p>
   </section>
 
   <footer>
-    Projeto desenvolvido para o <strong>Gemini 3 Hackathon</strong>.
+    ASH — Gemini Hackathon 3
   </footer>
 
 </body>
-
 </html>
+
